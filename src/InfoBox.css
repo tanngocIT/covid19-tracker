@@ -1,6 +1,7 @@
 .infoBox {
   flex: 1;  
   background-color: #2e353e !important;
+  border-top: 10px solid #2e353e;
 }
 .infoBox--white{  
   color: #fff;
@@ -26,7 +27,15 @@
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 0.5rem;
+  font-weight: 900;
 }
+
+@media (max-width: 400px) {
+  .infoBox__total {
+    font-size: 1rem;
+  }
+}
+
 
 .infoBox__cases {
   color: #6c757d;

@@ -8,7 +8,7 @@ function InfoBox({ caseType, cases, total, active, isRed, ...props }) {
     <Card
       onClick={props.onClick}
       className={`infoBox ${active && "infoBox--selected"} ${
-        isRed && "infoBox--red"
+        active && isRed && "infoBox--red"
       }`}
     >
       <CardContent>

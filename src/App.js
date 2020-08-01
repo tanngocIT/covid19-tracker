@@ -40,7 +40,7 @@ export const CasesTypeColors = {
 
 export const CaseType = {
   New: {
-    title: "Coronavirus Cases",
+    title: "Cases",
     value: "cases",
     color: CasesTypeColors.cases,
   },
