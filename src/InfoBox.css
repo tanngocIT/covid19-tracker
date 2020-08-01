@@ -2,6 +2,7 @@
   flex: 1;  
   background-color: #2e353e !important;
   border-top: 10px solid #2e353e;
+  cursor: pointer;
 }
 .infoBox--white{  
   color: #fff;
