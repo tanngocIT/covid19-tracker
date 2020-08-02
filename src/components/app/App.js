@@ -1,20 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import {
-  MenuItem,
-  FormControl,
-  Select,
-  Card,
-  CardContent,
-  TextField,
-} from "@material-ui/core";
+import { FormControl, Card, CardContent, TextField } from "@material-ui/core";
 import Autocomplete from "@material-ui/lab/Autocomplete";
-import InfoBox from "./InfoBox";
-import LineGraph from "./LineGraph";
-import Table from "./Table";
-import { sortData, prettyPrintStat } from "./util";
+import InfoBox from "../info-box/InfoBox";
+import LineGraph from "../chart/LineGraph";
+import Table from "../table/Table";
+import { sortData } from "../../utils/util";
 import numeral from "numeral";
-import Map from "./Map";
+import Map from "../map//Map";
 import "leaflet/dist/leaflet.css";
 
 export const CasesTypeColors = {
@@ -123,22 +116,11 @@ const App = () => {
         <div className="app__header">
           <h1>COVID-19 Tracker</h1>
           <FormControl className="app__dropdown">
-            {/* <Select
-              variant="outlined"
-              value={country}
-              onChange={onCountryChange}
-            >
-              <MenuItem value="worldwide"  classes="app__dropdown__item">Worldwide</MenuItem>
-              {countries.map((country) => (
-                <MenuItem value={country.value}>{country.name}</MenuItem>
-              ))}
-            </Select> */}
             <Autocomplete
               id="sellect__country"
               options={countries}
               classes="app__dropdown__item"
               getOptionLabel={(option) => option.name}
-              style={{ width: 300 }}
               onChange={onCountryChange}
               renderInput={(params) => (
                 <TextField {...params} label="Worldwide" variant="outlined" />

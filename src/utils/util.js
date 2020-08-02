@@ -1,7 +1,7 @@
 import React from "react";
 import numeral from "numeral";
 import { Circle, Popup } from "react-leaflet";
-import { CaseType } from "./App";
+import { CaseType } from "../components/app/App";
 
 export const sortData = (data) => {
   let sortedData = [...data];
