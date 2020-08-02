@@ -114,7 +114,7 @@ const App = () => {
     <div className="app">
       <div className="app__left">
         <div className="app__header">
-          <h1><a href="">COVID-19 Tracker</a> </h1>
+          <h1><a href="/covid19-tracker">COVID-19 Tracker</a> </h1>
           <FormControl className="app__dropdown">
             <Autocomplete
               id="sellect__country"
