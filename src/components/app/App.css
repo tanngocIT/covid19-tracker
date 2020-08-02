@@ -41,6 +41,11 @@ body {
   color: #fc3c3c;
   font-size: 2rem;
 }
+.app__header > h1 > a {
+  color: inherit;
+  text-decoration: none;
+}
+
 
 .app__stats {
   display: flex;
